@@ -1,12 +1,12 @@
-# To install NetApp SolidFire Powershell on Windows:
+# To install NetApp SolidFire PowerShell on Windows:
 
 ![solidfire-powershell-logo](../../Install/product.png)   ![windows-logo](windows10-logo-small.png)
 
 This page has instructions for installing the SolidFire PowerShell Core tools module on a Windows client. 
 
-**Note**: Only Powershell Core is supported in Powershell Tools v1.6. 
+**Note**: Only PowerShell Core is supported in PowerShell Tools v1.6. 
 
-## Powershell Core
+## PowerShell Core
 
 ##### Prerequisites
 
@@ -14,7 +14,7 @@ This page has instructions for installing the SolidFire PowerShell Core tools mo
 |----------------------|------------------|
 | .NET Core SDK        | 3.1 or later     |
 | PowerShell Core      | 6.2 or later     |
-| SolidFire Element OS | 11               |
+| Element software     | 11               |
 
 ### Installation Instructions
 1. Download and install the .NET Core SDK, Version 3.1. You can get that here: 
@@ -27,11 +27,13 @@ This page has instructions for installing the SolidFire PowerShell Core tools mo
 
    Latest version : [Powershell Core 7.0](https://github.com/PowerShell/PowerShell/)
 
-3. Once inside the PowerShell Core shell, install SolidFire PowerShell Tools by downloading it from the [PowerShell Gallery](powershellgallery.com) with the following command:
+3. Once inside the PowerShell Core shell, install SolidFire PowerShell Tools using the following command:
 
         PS> Install-Module -Name SolidFire.Core
 
-4. Then, import the SolidFire module with the following command:
+   The command automatically downloads the tool from the [PowerShell Gallery](powershellgallery.com).
+
+4. Import the SolidFire module with the following command:
 
         PS> Import-Module SolidFire.Core
 
@@ -41,7 +43,7 @@ This page has instructions for installing the SolidFire PowerShell Core tools mo
 
 ##### Supported Microsoft Operating Systems
 
-The following versions of Microsoft operating systems are supported, and have had the module tested on them.
+The module supports and has been tested on the following versions of these Microsoft operating systems:
 
 | Version                |
 |------------------------|
@@ -49,6 +51,6 @@ The following versions of Microsoft operating systems are supported, and have ha
 | Windows Server 2018    |
 | Windows 10             |
 
-PowerShell Core 6.2 supports many more platforms, but extensive module testing has not been done. More than likely they work fine, but no guarantees are given.
+PowerShell Core 6.2 supports many more platforms, however extensive module testing has not been done.
 
 You can find that list here at [PowerShell Core 6.2](https://devblogs.microsoft.com/powershell/general-availability-of-powershell-core-6-2/).
